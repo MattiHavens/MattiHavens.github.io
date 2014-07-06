@@ -1,0 +1,129 @@
+header, body, img, h1, h2, h3, h4, h5, h6, footer, section, ol, ul, p {
+margin: 0;
+padding: 0;
+}
+
+
+header {
+    color: #FDFFFF;
+    background: #004553;
+    text-align: center;
+    padding: 10px;
+    }
+
+body {
+    width: 100%;
+    background: #FDFFFF;
+    }
+
+.intro {
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+    }
+
+h2, h3{
+    color: #004553;
+    padding: 1%;
+    line-height: 30px;
+    background: #E2DD52;
+    width: 30%;
+}   
+
+.container {
+    border-top: 6px solid #E2DD52;
+}
+
+p {
+    padding: 1%;
+    float: left;
+    width: 63%;
+    line-height: 25px
+}
+
+em {
+    font-weight: bold;
+    color: #119CEF;
+}
+
+.image {
+    float: left;
+    width: 300px;   
+    height: auto;
+    padding: 1%;
+    border: 3px solid #9CEACB;
+    margin: 10px
+}    
+
+section {
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+    clear: both;
+}
+
+.benefits{
+    width
+}
+
+ul  {
+    line-height: 25px;
+    width: 80%;
+    padding-left: 3%;
+    padding-top: 1%
+}
+
+.steps {}
+
+ol {
+    width: 61%;
+    padding-top: 1%;
+    padding-left: 3%;
+    padding-right: 1%;
+    float: left;
+    line-height: 25px
+}
+
+.reflection{
+}
+
+.reflection p {
+    width: 80%;
+}
+
+div {
+    clear: both
+}
+
+article {
+    width: 47%;
+    margin: 1%;
+    border: 3px solid #9CEACB;
+    float: left;
+}
+
+h4{
+    background: #9CEACB;
+    padding: 2%;
+    color: #004553;
+}
+
+.reflection article p {
+    width: 96%;
+    margin: 0 auto;
+    line-height: 25px;
+    padding: 2%;
+}
+
+
+footer {
+    clear: both;
+    color: #004553;
+    text-align: center;
+}
+
+footer p {
+    width: 100%;
+    padding: 1%;
+    background: #E2DD52;
+}
