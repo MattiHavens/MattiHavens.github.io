@@ -1,6 +1,11 @@
-/*
-* multi-line comment
-*/
+
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, fieldset, input, th, td
+{
+margin: 0; padding: 0; border: 0; outline: none;
+}
+
+
 p{ line-height: 1em; }
 h1, h2, h3, h4{
     color: orange;
@@ -23,7 +28,9 @@ body{
     font-family: arial; font-size: 80%; line-height: 1.2em; width: 100%; margin: 0; background: #eee;
 }
 /* you can put your code all in one line like above */
-#page{ margin: 20px; }
+#page{ margin: 20px;
+       padding: 20px; 
+ }
 
 /* or on different lines like below */
 #logo{
@@ -69,7 +76,7 @@ body{
 		text-align: right;
 		text-transform: uppercase;
 		font-size: 80%;
-		color: grey;
+		color: gray;
 	}
 
 /* multiple styles seperated by a , */
