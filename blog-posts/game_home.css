@@ -9,8 +9,7 @@ margin: 4%; padding: 0; border: 0; outline: none; background-color: yellow;
 
 
 @font-face{
-
-	font-family: MyThirdFont;
+    font-family: MyThirdFont;
     src: url(fonts/Exo-Regular.otf);
 
     font-family: MyScaryFont;
@@ -40,7 +39,7 @@ margin: 4%; padding: 0; border: 0; outline: none; background-color: yellow;
   
 }
 
-#headder h3 {
+#header h3 {
 	font-family: 'MyThirdFont';
 	color: #fff;
 	font-size: 4em;
