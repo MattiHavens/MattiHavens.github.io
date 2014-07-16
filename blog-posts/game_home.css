@@ -5,15 +5,13 @@ margin: 4%; padding: 0; border: 0; outline: none; background-color: yellow;
 }
 
 
-
-
-
 @font-face{
-    font-family: MyThirdFont;
+/*
+	font-family: MyThirdFont;
     src: url(fonts/Exo-Regular.otf);
-
-    font-family: MyScaryFont;
-    src: url(fonts/pieces3_nfi.ttf);
+*/
+font-family: MyScaryFont;
+src: url(fonts/pieces3_nfi.ttf);
 }
 
 #font {
@@ -21,13 +19,13 @@ margin: 4%; padding: 0; border: 0; outline: none; background-color: yellow;
   font-size: 80px;
    padding: 20px;
 }
-
+/*
 #font1 {
   font-family: 'MyThirdFont;';
   font-size: 12px;
    padding: 20px;
 }
-
+*/
 #header h1 {
   font-family: 'MyScaryFont;';
   color: #fff;
