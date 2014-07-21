@@ -32,16 +32,16 @@
       <br>
       <br>
       
- <!--<a href="http://thebeautifulbrain.com/2010/05/gallery-pablo-garcia-lopez/" target="_blank">Artwork by Pablo Garcia Lopez</a> 
-  <img src="http://thebeautifulbrain.com/wp-content/uploads/2010/05/PETSoulbutterflies.jpg"
+ 
+  &nbsp;&nbsp;&nbsp;<img src="http://originalbigwheel.us/images/MarxBigWheel400.jpg"
     width="820" height="660"
-    alt="Pablo Garcia Lopez">
+    alt="Big Wheel">
       <br>
-
+      
     <br>
     <br>
     <br>
-    -->
+    
     <h3>
        .cycle
        </h3>
@@ -49,7 +49,7 @@
       I researched enumerable#cycle primarily because I like bicycles. 
       </p>
       <p>
-     Seriously though, it is a very useful method that lets you cycle through all the elements of an array forever unless you give a condition to stop it. <br>
+     Seriously though, it is a very useful method that lets you cycle through all the elements of an array forever <br> unless you give a condition to stop it or put a number in parentheses following .cycle. <br>
      Or until you stop it with control-c. In this example we will use break to end it.
       </p>
       <p>
@@ -62,7 +62,7 @@
           &nbsp;&nbsp;&nbsp;break if month == "Dec"<br>
       end<br>
       <br>
-      (output)<br>
+      <i>(output)</i><br>
       Jan <br>
       Feb <br>
       Mar <br>
@@ -75,6 +75,48 @@
       Oct <br>
       Nov <br>
       Dec<br>
+
+      <p>
+      Also, you could put a number in parentheses following .cycle to iterate through it that number of times.<br>
+      For example;
+      </p>
+      rainbow = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"]<br>
+          &nbsp;&nbsp;&nbsp;rainbow.cycle(2) do |colors|<br>
+          &nbsp;&nbsp;&nbsp;puts colors<br>
+      end<br>
+      <br>
+      <i>(output)</i><br>
+      Red<br>
+      Orange<br>
+      Yellow<br>
+      Green<br>
+      Blue<br>
+      Indigo<br>
+      Violet<br>
+      Red<br>
+      Orange<br>
+      Yellow<br>
+      Green<br>
+      Blue<br>
+      Indigo<br>
+      Violet<br>
+
+      <p>
+      You can also chain it together with other methods for example, you could reverse it.<br>
+      </p>
+      rainbow = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"]<br>
+          &nbsp;&nbsp;&nbsp;rainbow.reverse_each.cycle(1) do |colors|<br>
+          &nbsp;&nbsp;&nbsp;puts colors<br>
+      end<br>
+      <br>
+      <i>(output)</i><br>
+      Violet<br>
+      Indigo<br>
+      Blue<br>
+      Green<br>
+      Yellow<br>
+      Orange<br>
+      Red<br>
 
       </p>
     <h3>
@@ -94,7 +136,7 @@
          &nbsp;&nbsp;&nbsp;break if year == :87<br>
       end<br>
       <br>
-      (output)<br>
+      <i>(output)</i><br>
       "Year: 76 - Animal: Dragon"<br>
 "Year: 77 - Animal: Snake"<br>
 "Year: 78 - Animal: Horse"<br>
@@ -107,18 +149,7 @@
 "Year: 85 - Animal: Ox"<br>
 "Year: 86 - Animal: Tiger"<br>
 "Year: 87 - Animal: Rabbit"<br>
-      <!--
-      <p>
-      It is also very useful when used in combination with 
-      </p>
-      <p>
-      Next;
-      </p>
-      <p>
-       Rewind;
-      </p>
-
-      -->
+      
       <br>
       <br>
       <h3>
@@ -141,6 +172,10 @@
      <a href="http://www.globalnerdy.com/2008/07/06/enumerating-enumerable-enumerablecycle/" target="_blank">Global Nerdy</a>
      </p>
 
+     <p>
+     <a href="http://www.sitepoint.com/guide-ruby-collections-iii-enumerable-enumerator/" target="_blank">sitepoint</a>
+     </p>
+     
      
 
           
