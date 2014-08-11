@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<meta charset=”utf-8”>
+<html>
+<head>
+
+
+
+    <title>SQL Injection</title>
+  
+  <meta name="author" content="Matti_Havens" />
+  <meta name="Diversity" content="" />
+
+ 
+  <link rel="stylesheet" href="SQL_Injection.css" type="blog_text/css" />
+  
+</head>
+<body>
+
+<!-- webpage content goes here in the body -->
+
+  <div id="page">
+    <div id="logo">
+      <h2><a href="http://mattihavens.github.io/blog-posts/blog_homepage.html"id="logoLink">Blogs for DBC</a></h2>
+
+
+
+    </div>
+
+    <div id="content">
+      <h1><strong><h1a>SQL Injection</h1a></strong></h1>
+      
+      
+ <!--<a href="http://www.redstategraffix.com/Diversity_Strength.jpg" target="_blank"></a> 
+  &nbsp;&nbsp;&nbsp;<img src="http://www.redstategraffix.com/Diversity_Strength.jpg"
+    width="1000" height="600"
+    alt="Snake Cat Owl"> -->
+      <br>
+
+    <br>
+    <br>
+    <br>
+    
+    <h3>
+       <!--Diversity   &quot;  &apos -->
+       </h3>
+      <p>
+      SQL Injection is a way for malicious hackers to get into a SQL database and alter and/or steal information. After seeing how it is done and how commonly it has occurred I am surprised it can still happen. As a matter of fact as stated by <a href="http://www.veracode.com/security/sql-injection" target="_blank">Veracode</a>&quot;With over 20% of all web vulnerabilities being attributed to SQL Injection, this is the 2nd most common software vulnerability.&quot; 
+      </p>
+      <br>
+      <p>
+      It seems pretty easy to do, just follow the example below and try it out yourself! Just kidding use your knowledge for good not evil!!
+      </p>
+    <br>
+      <p>
+      If the server code is like below and requires the user to input information that will go directly into a SQL statement it allows the malicious user to manipulate it.
+      </p>
+      <br>
+      <img src=../Shot_1.jpg width="400" height="100"
+    alt="Shot_1">
+      <br>
+      <br>
+      <p>
+      when asked for the UserName the malicious user would enter something like;
+      </p>
+      <br>
+      <img src=../Shot_2.jpg width="400" height="100"
+    alt="Shot_2">
+      <br>
+      <br>
+      <p>
+       Then the following would be true;
+      </p>
+      <br>
+      <img src=../Shot_3.jpg width="400" height="100"
+    alt="Shot_3">
+      <br>
+      <br>
+      <p>
+      The SQL above is correct code. Then it would return all the rows from the table Users, since WHERE 1=1 is always true. Likewise the malicious user could use any true statement 2=2, etc...
+      </p>
+      <br>
+      <p>
+      If the Users row contained names and passwords or other sensitive information then the malicious user could cause a lot of problems. As you can see it is a rather simple and ingenious way of accessing information.
+      </p>
+      <br>
+      <br>
+      <!--<h3>Websites for reference</h3>
+
+      <p>
+    <a href="http://www.nytimes.com/2014/04/06/technology/technologys-man-problem.html?_r=0" target="_blank">Technology&apos;s Man Problem</a> 
+    </p>
+     <p>
+     The below link lists diversity as reason number 6 in the "Top Ten Problems Faced by Business". Clearly it 
+     isn't only a problem faced by the tech industry. Their description of the problem is short but concise.
+     </p>
+     <p>
+     <a href="https://www.bmgi.com/resources/articles/top-ten-problems-faced-business" target="_blank">Top Ten Problems Faced by Business</a>
+     </p>
+     </div>
+          
+      <!--http://thebeautifulbrain.com/wp-content/uploads/2010/05/PETSoulbutterflies.jpg
+      <br> 
+      
+      http://thebeautifulbrain.com/2010/05/gallery-pablo-garcia-lopez/ -->
+     </div>
+    <div id="footer">
+      <p>
+        Webpage made by <a href="http://mattihavens.github.io/dbc1.html" target="_blank">Matti Havens - mattihav@hotmail.com</a>
+      </p>
+    </div>
+  
+</body>
+</html>
+
