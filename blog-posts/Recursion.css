@@ -37,6 +37,8 @@ body{
     font-family: arial; font-size: 100%; line-height: 1.2em; width: 100%; margin: 20; background: #eee;
 }
 
+.tab { margin-left: 40px; }
+
 #page{ margin: 20px; }
 
 
