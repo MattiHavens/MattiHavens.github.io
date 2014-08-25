@@ -4,6 +4,7 @@
 
 
 <head>
+
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Matti_Havens</title>
 </head>
@@ -24,12 +25,70 @@
           <ul>
               
               <div id="floater">
+              
               <div id="content">
 
 
                <p><strong></strong>
               <a href="http://mattihavens.github.io/blog-posts/blog_homepage.html"><img style="border:0" <strong><p>Blog<p src="" width="42" height="42"></a></p>
-                                        
+              <SCRIPT LANGUAGE="JavaScript">
+				<!-- Original:  Robert Bui (astrogate@hotmail.com) -->
+				<!-- Web Site:  http://astrogate.virtualave.net -->
+
+				<!-- This script and many more are available free online at -->
+				<!-- The JavaScript Source!! http://www.javascriptsource.com -->
+
+				<!-- Begin
+				var interval = 1; // delay between rotating images (in seconds)
+				var random_display = 0; // 0 = no, 1 = yes
+				interval *= 1000;
+
+				var image_index = 0;
+				image_list = new Array();
+				image_list[image_index++] = new imageItem("http://mattihavens.github.io/blog-posts/Bee.jpg");
+				image_list[image_index++] = new imageItem("http://mattihavens.github.io/blog-posts/Plus.jpg");
+				image_list[image_index++] = new imageItem("http://mattihavens.github.io/blog-posts/Log.jpg");
+				var number_of_image = image_list.length;
+				function imageItem(image_location) {
+				this.image_item = new Image();
+				this.image_item.src = image_location;
+				}
+				function get_ImageItemLocation(imageObj) {
+				return(imageObj.image_item.src)
+				}
+				function generate(x, y) {
+				var range = y - x + 1;
+				return Math.floor(Math.random() * range) + x;
+				}
+				function getNextImage() {
+				if (random_display) {
+				image_index = generate(0, number_of_image-1);
+				}
+				else {
+				image_index = (image_index+1) % number_of_image;
+				}
+				var new_image = get_ImageItemLocation(image_list[image_index]);
+				return(new_image);
+				}
+				function rotateImage(place) {
+				var new_image = getNextImage();
+				document[place].src = new_image;
+				var recur_call = "rotateImage('"+place+"')";
+				setTimeout(recur_call, interval);
+				}
+				//  End -->
+				</script>
+				<BODY OnLoad="rotateImage('rImage')">
+				<!--<center> -->
+				<img name="rImage" src="http://www.javascriptsource.com/img/image-cycler/01.jpg" width=180 height=140>
+				<!--</center> -->
+                <!--
+				<p><center>
+				<font face="arial, helvetica" size="-2">Free JavaScripts provided<br/>
+				by <a href="http://javascriptsource.com">The JavaScript Source</a></font>
+				</center><<p>
+				-->
+                                          
               </div>
               </div>
          </ul>
@@ -37,15 +96,15 @@
         <div class="block">
           
           <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              
               <div id="floater">
               <div id="content">
 
               <p><strong></strong>
               <a href="http://mattihavens.github.io/dbc1.html"><img style="border:0" <strong><p>About Me<p src="" width="42" height="42"></a></p>
+              <div id="starholder">
+                  <div id="star"></div>
+              </div>​
                                      
               </div>
               </div>
@@ -56,7 +115,7 @@
       </div>
     </div>
     <div id="footer">
-        <p>A fascinating future footer</p>
+        <p>WEBPAGE MADE BY MATTI HAVENS - MATTIHAV@HOTMAIL.COM</p>
     </div>
   </div>
 </body>
