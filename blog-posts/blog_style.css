@@ -28,14 +28,14 @@ body{
     font-family: arial; font-size: 100%; line-height: 1.2em; width: 100%; margin: 0; background: #eee;
 }
 /* you can put your code all in one line like above */
-#page{ margin: 60px;
-       padding: 60px; 
+#page{ margin: 3.125em;
+       padding: 3.125em; 
  }
 
 /* or on different lines like below */
 #logo{
 	width: 35%;
-	margin-top: 5px;
+	margin-top: 0.313em;
 	font-family: georgia;
 	display: inline-block;
 }
@@ -49,28 +49,28 @@ body{
 	#nav ul{}
 		#nav ul li{
 			display: inline-block;
-			height: 84px;
+			height: 5.250em;
 		}
 			#nav ul li a{
-				padding: 30px;
+				padding: 1.875em;
 				background: red;
 				color: white;
 			}
 			#nav ul li a:hover{
 				background-color: #ffb424;
-				box-shadow: 0px 1px 1px #666;
+				box-shadow: 0.000em 0.063em 0.063em #666;
 			}
 			#nav ul li a:active{ background-color: #ff8f00; }
 
 #content{
-	margin: 30px 0;
+	margin: 1.875em 0;
 	background: white;
-	padding: 20px;
+	padding: 1.250em;
 	clear: both;
 }
 #footer{
-	border-bottom: 1px #ccc solid;
-	margin-bottom: 10px;
+	border-bottom: 0.063em #ccc solid;
+	margin-bottom: 0.625em;
 }
 	#footer p{
 		text-align: right;
@@ -81,4 +81,4 @@ body{
 
 /* multiple styles seperated by a , */
 #content,
-ul li a{ box-shadow: 0px 1px 1px #999; }
+ul li a{ box-shadow: 0.000em 0.063em 0.063em #999; }
