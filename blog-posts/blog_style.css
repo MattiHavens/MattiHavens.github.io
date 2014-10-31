@@ -69,14 +69,13 @@ body{
 	clear: both;
 }
 #footer{
+	position: fixed;
+	bottom: 5em;
+	
 	border-bottom: 0.063em #ccc solid;
 	margin-bottom: 0.625em;
 }
 	#footer p{
-		
-		position: fixed;
-		bottom: 0;
-
 		text-align: right;
 		text-transform: uppercase;
 		font-size: 80%;
