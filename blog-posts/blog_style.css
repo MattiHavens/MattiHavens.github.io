@@ -71,11 +71,11 @@ body{
 #footer{
 	position: fixed;
 	bottom: 3em;
-	float: right;
 	border-bottom: 0.063em #ccc solid;
 	margin-bottom: 0.625em;
 }
 	#footer p{
+		float: right;
 		text-align: right;
 		text-transform: uppercase;
 		font-size: 80%;
