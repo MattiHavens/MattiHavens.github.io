@@ -70,13 +70,13 @@ body{
 }
 #footer{
 	position: fixed;
-	bottom: 5em;
-	
+	bottom: 3em;
+	text-align: right;
 	border-bottom: 0.063em #ccc solid;
 	margin-bottom: 0.625em;
 }
 	#footer p{
-		text-align: right;
+		
 		text-transform: uppercase;
 		font-size: 80%;
 		color: gray;
