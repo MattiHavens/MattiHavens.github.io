@@ -63,10 +63,10 @@ body{
 			#nav ul li a:active{ background-color: #ff8f00; }
 
 #content{
-	margin: 1.875em 0;
+	margin: 4.875em 0;
 	
 	background: white;
-	padding: 5.250em;
+	padding: 1.250em;
 	clear: both;
 }
 #footer{
