@@ -73,6 +73,10 @@ body{
 	margin-bottom: 0.625em;
 }
 	#footer p{
+		
+		position: fixed;
+		bottom: 0;
+
 		text-align: right;
 		text-transform: uppercase;
 		font-size: 80%;
