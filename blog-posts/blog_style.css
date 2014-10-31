@@ -49,10 +49,10 @@ body{
 	#nav ul{}
 		#nav ul li{
 			display: inline-block;
-			height: 62px;
+			height: 84px;
 		}
 			#nav ul li a{
-				padding: 20px;
+				padding: 30px;
 				background: red;
 				color: white;
 			}
