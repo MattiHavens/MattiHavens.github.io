@@ -1,0 +1,118 @@
+body, html, main {
+    height: 97%;
+}
+
+.grey { font-family: Futura, sans-serif; font-size: 1.30em; color:#858585; }
+.small { font-family: Futura, sans-serif; font-size: 1.00em; color:#FF9900; }
+.rose { font-family: Futura, sans-serif; font-size: 1.500em; color: #FF3399 }
+.orange { font-family: Futura, sans-serif; font-size: 1.500em; color: #FF9900 }
+.green { font-family: Futura, sans-serif; font-size: 1.500em; color: #66CC00 }
+.white { font-family: Futura, sans-serif; font-size: 1.500em; color: #FFFFFF }
+.blue { font-family: Futura, sans-serif; font-size: 1.500em; color: #00aeff }
+.black {  font-family: Futura, sans-serif; font-size: 1.500em; color: #000000}
+.red {  font-family: Futura, sans-serif; font-size: 1.500em; color: #FF0000}
+.purple {  font-family: Futura, sans-serif; font-size: 1.500em; color: #8000FF}
+ 
+#header {
+    background-color: transparent;
+    /*Opacity start*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.80;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    /*Opacity end*/
+    color: black;
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+    width: 99%;
+    height: 3.125em;
+    z-index: 99;
+}
+
+#header #header-content {
+    margin: 0.625em;
+}
+
+.video {
+  font-size: 1.200em;
+  position: absolute; 
+  top: 2%;
+  left: 64%;
+}
+
+.collaboration {
+  font-size: 1.200em;
+  position: absolute;
+  top: 2%;
+  left: 84%;
+}
+
+.technical {
+  font-size: 1.200em;
+  position: absolute;
+  top: 40.5%;
+  left: 47%;
+}
+
+.contact {
+  font-size: 1.000em;
+  position: absolute;
+  top: 1%;
+  left: 46%;
+}
+
+.two_d {
+  font-size: 1.200em;
+  position: absolute; 
+  top: 2%; 
+  left: 4%;
+}
+
+.sculpture {
+  font-size: 1.200em;
+  position: absolute; 
+  top: 2%; 
+  left: 24%;
+}
+
+.background {
+    min-height: 100%;
+    background-size: cover;
+    height: auto;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url("cut_4.jpg");
+}
+
+.photos {
+    position: absolute; 
+    top: 94%; 
+    left: 8%;
+}
+
+.paintings {
+    position: absolute; 
+    top: 94%; 
+    left: 27%;
+}
+
+.misc {
+    position: absolute;
+    top: 94%;
+    left: 44%;
+}
+
+.prints {
+    position: absolute; 
+    top: 94%;
+    left: 64%;
+}
+
+.drawings {
+    position: absolute;
+    top: 94%;
+    left: 84%;
+}

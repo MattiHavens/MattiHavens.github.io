@@ -1,0 +1,138 @@
+
+body {
+	background-color:rgb(56,56,56);
+  font-family: Futura, sans-serif; 
+  font-size: 1.188em;
+	}
+
+.grey { font-family: Futura, sans-serif; font-size: 1.00em; color:#858585; }
+.small { font-family: Futura, sans-serif; font-size: 0.7em; color:#858585; }	
+.rose { font-family: Futura, sans-serif; color: #FF3399 }
+.orange { font-family: Futura, sans-serif; color: #FF9900 }
+.green { font-family: Futura, sans-serif; color: #66CC00 }
+.white { font-family: Futura, sans-serif; color: #FFFFFF }
+.blue { font-family: Futura, sans-serif; color: #00aeff }
+.black {  font-family: Futura, sans-serif; color: #000000}
+.red {  font-family: Futura, sans-serif; color: #FF0000}
+.purple {  font-family: Futura, sans-serif; color: #8000FF}
+	
+#header {
+    background-color: black;
+    /*Opacity start*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.80;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    /*Opacity end*/
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2.525em;
+    padding: 0;
+    margin: 0;
+    z-index: 99;
+}
+#header #header-content {
+    margin: 0.625em;
+}
+
+.video {
+  position: absolute; 
+  top: 2%;
+  left: 64%;
+}
+
+.collaboration {
+  position: absolute;
+  top: 2%;
+  left: 84%;
+}
+
+.technical {
+  position: absolute;
+  top: 40.5%;
+  left: 46.75%;
+}
+
+.contact {
+  position: absolute;
+  top: 1%;
+  left: 46.5%;
+}
+
+.two_d {
+  position: absolute; 
+  top: 2%; 
+  left: 4%;
+}
+
+.sculpture {
+  position: absolute; 
+  top: 2%; 
+  left: 24%;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.landscape {
+  height: 270px;
+  width: 330px;
+  margin-left: 20px;
+  margin-top: 20px;
+  float: left;
+}
+
+.imgWrap {
+  position: relative;
+  height: 270px;
+  width: 330px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 60px;
+  float: left;
+}
+
+.imgDescription {
+  display: table;
+  position: absolute;
+  height: 248px;
+  width: 330px;
+  top: 20px;
+  bottom: 0px;
+  left: 20;
+  background: rgba(0, 0, 0, 0.93);
+  text-align: center;
+  visibility: hidden;
+}
+
+span.table {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
+
+a, span.link {
+  color: #FF9900;
+  text-decoration: none;
+}
+
+a:visited, span.visited {
+   color: #FF9900;
+   text-decoration: none;
+}
+
+a:active, span.active {
+   color: #FF9900;
+   text-decoration: none;
+}  
+

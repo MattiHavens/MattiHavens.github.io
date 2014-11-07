@@ -1,0 +1,577 @@
+/*CSS Reset code*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.rose { font-family: Futura, sans-serif; font-size: 1.300em; color:#858585; }
+.orange { font-family: Futura, sans-serif; font-size: 1.300em; color:#858585; }
+.small { font-family: Futura, sans-serif; font-size: 1.00em; color:#858585; }
+.green { font-family: Futura, sans-serif; font-size: 1.300em; color:#858585; }
+.white { font-family: Futura, sans-serif; font-size: 1.300em; color:#858585; }
+.blue { font-family: Futura, sans-serif; font-size: 1.300em; color:#858585; }
+.black {  font-family: Futura, sans-serif; font-size: 1.300em; color:#858585;}
+.red {  font-family: Futura, sans-serif; font-size: 1.300em; color:#858585;}
+.purple {  font-family: Futura, sans-serif; font-size: 1.300em; color:#858585;}
+
+#header {
+    background-color: black;
+    /*Opacity start*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.80;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    /*Opacity end*/
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.125em;
+    padding: 0;
+    margin: 0;
+    z-index: 99;
+}
+#header #header-content {
+    margin: 0.625em;
+}
+	
+a, span.link {
+  color: #858585;
+  text-decoration: none;
+}
+
+a:visited, span.visited {
+   color: #858585;
+   text-decoration: none;
+}
+
+a:active, span.active {
+   color: #858585;
+   text-decoration: none;
+}
+
+.video {
+  position: absolute; 
+  top: 2%;
+  left: 64%;
+}
+
+.collaboration {
+  position: absolute;
+  top: 2%;
+  left: 84%;
+}
+
+.technical {
+  position: absolute;
+  top: 40.5%;
+  left: 46.75%;
+}
+
+.contact {
+  position: absolute;
+  top: 1%;
+  left: 46%;
+}
+
+.two_d {
+  position: absolute; 
+  top: 2%; 
+  left: 4%;
+}
+
+.sculpture {
+  position: absolute; 
+  top: 2%; 
+  left: 24%;
+}
+
+
+body {
+	background-color:#000;
+	}
+	
+#gallery a {
+	text-decoration:none;
+	}
+	
+#descrip {
+	position: relative;
+	float: left;
+	top: -0.5em;
+	left: 3%;
+    width:85%;
+    margin-left: 12% auto;
+	text-decoration:none;
+	font-family: Futura, sans-serif;
+	font-size:1.250em;
+	color:#858585;
+
+}
+#descrip_two {
+	position: relative;
+	float: left;
+	margin-top: -12.500em;
+	left: 5%;
+    width:85%;
+    margin-left: 12.500em auto;
+	text-decoration:none;
+	font-family: Futura, sans-serif;
+	font-size:1.250em;
+	color:#858585;
+}
+
+#descrip_three {
+	position: relative;
+	float: left;
+	top: 1.250em;
+	left: 5%;
+    width:85%;
+    margin-left: 12.500em auto;
+	margin-bottom: 3.125em;
+	bottom: 3.125em;
+	text-decoration:none;
+	font-family: Futura, sans-serif;
+	font-size:1.250em;
+	color:#858585;
+}
+
+#right_descrip {
+	position: relative;
+	float: right;
+	top: 9.125em;
+	right: 20%;
+    width:25%;
+	margin:6.250em auto;
+	text-decoration:none;
+	font-family: Futura, sans-serif;
+	color: #858585;
+	font-size:1.250em;
+}
+
+#left_descrip {
+	position: relative;
+	float: left;
+	top: -53.125em;
+	left: 15%;
+    width:20%;
+	margin:6.250em auto;
+	text-decoration:none;
+	font-family: Futura, sans-serif;
+	color: #858585;
+	font-size:1.250em;
+}
+
+#right_descrip_tall {
+	top: 17.625em;
+	width: 38%;
+	position: relative;
+	float: left;
+	right: -7%;
+    margin:6.250em auto;
+    margin-bottom: 24em;
+	text-decoration:none;
+	font-family: Futura, sans-serif;
+	color: #858585;
+	font-size:1.250em;
+}
+
+#left_descrip_tall {
+	top: -20.625em;
+	width: 30%;
+	position: relative;
+	float: left;
+	left: 4%;
+    margin:6.250em auto;
+    margin-bottom: 0em;
+	text-decoration:none;
+	font-family: Futura, sans-serif;
+	color: #858585;
+	font-size:1.250em;
+}
+
+#center_descrip {
+	position: relative;
+	float: left;
+	top: 2.000em;
+	left: 7%;
+	bottom: 2em;
+    margin-bottom: 3em;
+	text-decoration:none;
+	font-family: Futura, sans-serif; 
+	font-size:1.1em;
+	color:#858585;
+	word-wrap: break-word;
+}
+
+a, span.link {
+  color: #858585;
+  text-decoration: none;
+}
+
+a:visited, span.visited {
+   color: #858585;
+   text-decoration: none;
+}
+
+a:active, span.active {
+   color: #858585;
+   text-decoration: none;
+}
+
+#gallery .big {
+	width: 40.000em; height: 31.875em; 
+	float: left;
+	position: relative;
+	margin-top: 7em;
+	margin-left: 30%;
+	top: -2em;
+	}
+
+#gallery .big a { 
+    overflow: hidden;
+	}
+
+#gallery .big a img {
+	height: 100%; 
+	align-self: center;
+	}
+
+#gallery .big_five {
+	width: 40.000em; height: 31.875em; 
+	float: left;
+	position: relative;
+	margin-left: 40%;
+	top: 9em;
+	}
+
+#gallery .big_five a { 
+    overflow: hidden;
+	}
+
+#gallery .big_five a img {
+	height: 100%; 
+	align-self: center;
+	}
+
+#gallery .big_two {
+	width: 53.250em; height: 35.875em; overflow: hidden;
+	float: left;
+	left: 1%;
+	position: relative;
+	margin: 1%;
+    margin-top: 6.5em;
+    margin-bottom: 2em;
+}
+
+#gallery .big_three {
+	width: 34.125em; height: 23.000em; 
+	float: left;
+	position: relative;
+	left: -23em;
+	top: 15.5em;
+	}
+
+#gallery .big_three a { 
+    overflow: hidden;
+	}
+
+#gallery .big_three a img {
+	height: 100%; 
+	align-self: center;
+	}
+
+#gallery .big_four {
+	width: 55.000em; height: 29.500em; overflow: hidden;
+	float: left;
+	width:75%;
+    margin-left: 20.000em;
+	margin-top: -0.625em;
+	}
+
+#gallery .big_four a { 
+    overflow: hidden;
+	}
+
+#gallery .big_four a img {
+	height: 100%; 
+	align-self: center;
+	}
+
+#gallery .tall {
+	width: 28.063em; height: 37.500em; 
+	float: left;
+	margin-left: 12%;
+	margin-top: 4.9em;
+	top: 2.9em;
+	}
+
+#gallery .tall a { 
+    overflow: hidden;
+	}
+
+#gallery .tall a img {
+	height: 100%; 
+	align-self: center;
+	}
+
+#gallery .tall_left {
+	width: 31.875em; height: 40.000em; 
+	position: relative;
+	float: left;
+	margin-left: -30em;
+	margin-top: 48.000em;
+	}
+
+#gallery .tall_left a { 
+    overflow: hidden;
+	}
+
+#gallery .tall_left a img {
+	height: 100%; 
+	align-self: center;
+	}
+
+#gallery .square {
+	width: 18.750em; height: 18.750em; overflow: hidden;
+	float: right;
+	position: relative;
+	margin-right: 2.500em;
+	margin-top: -16.875em;
+	}
+
+#gallery .square a { 
+    overflow: hidden;
+	}
+
+#gallery .square a img {
+	height: 100%; 
+	width: 100%;
+	align-self: center;
+	}
+
+#gallery .square_two {
+	width: 14.750em; height: 14.750em; overflow: hidden;
+	float: left;
+	position: relative;
+	margin-left: 4%;
+	margin-top: 8.5%;
+	margin-bottom: -1.2em;
+	bottom: 1%;
+}
+
+#gallery .square_two a { 
+    overflow: hidden;
+	}
+
+#gallery .square_two a img {
+	height: 100%; 
+	width: 100%;
+	align-self: center;
+	}
+
+#gallery .wide {
+	width: 18.188em; height: 12.500em; 
+	float: left;
+	width:18%;
+    margin-left:12.5%;
+	margin-top: 0.313em;
+	top: 0.313em;
+	}
+
+#gallery .wide a { 
+    overflow: hidden;
+	}
+
+#gallery .wide a img {
+	height: 100%; 
+	align-self: center;
+	}
+
+#gallery .wide_two {
+	width: 30.5em; height: 21.5em; overflow: hidden;
+	float: left;
+	position: relative;
+	left: 1.5%;
+    /*left-margin:2.813em auto;*/
+	top: -18.250em;
+	}
+
+#gallery .wide_two a { 
+    overflow: hidden;
+	}
+
+#gallery .wide_two a img {
+	height: 100%; 
+	align-self: center;
+	}
+
+#gallery .wide_three {
+	width: 18.188em; height: 12.500em; 
+	float: left;
+	width:18%;
+	margin-left:7%;
+	margin-right: 7%;
+	margin-top: 2.500em;
+	}
+
+#gallery .wide_three a { 
+    overflow: hidden;
+	}
+
+#gallery .wide_three a img {
+	height: 100%; 
+	align-self: center;
+	}	
+
+#gallery .item_two {
+	width: 30.625em; height: 42.250em; 
+	float: left;
+	position: relative;
+	/*top: -75%;*/
+	margin-top: -10em;
+	margin-left:45%;
+	}
+
+#gallery .item_two a { 
+    overflow: hidden;
+	}
+
+#gallery .item_two a img {
+	height: 100%; 
+	width: 100%;
+	align-self: center;
+	}
+
+#gallery .small_tall {
+	width: 12.500em; height: 18.750em; overflow: hidden;
+	float: left;
+	margin-left:11.250em;
+	}
+
+#gallery .small_tall a { 
+    overflow: hidden;
+	}
+
+#gallery .small_tall a img {
+	height: 100%; 
+	width: 100%;
+	align-self: center;
+	}
+
+/*pure CSS Lightbox below is from...
+http://codepen.io/andornagy/pen/uxbtp*/
+
+
+.lightbox {
+	display: none;
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
+	height: 100%;
+	top: -0.4em;
+	left: 0;
+	color:#333333;
+}
+
+.lightbox:target {
+    display: block;
+    outline: none;
+}
+
+.lightbox .box {
+  	width: -webkit-min-content;
+  	width: -moz-min-content;
+  	width: min-content;
+  	text-align: right;
+	min-width: 24.00em;
+ 	margin: 0.05% auto;
+	padding:0.1em 0.1em 0.1em 0.1em;
+	background-color:#FFF;
+	box-shadow: 0.000em 0.063em 0.5em -0.188em #777777; 
+}
+
+.lightbox .title {
+	margin:0;
+	padding:0 0 0.625em 0.000em;
+	border-bottom:0.063em #ccc solid;
+	font-size:1.375em;
+}
+
+.lightbox .content {
+	position:relative;
+}
+
+.lightbox .content:hover .desc	{
+	opacity:1;
+}
+
+.lightbox .next,
+.lightbox .prev,
+.lightbox .close {
+	display:block;
+	text-decoration:none;
+	font-family: Futura, sans-serif; 
+	font-size:0.7em;
+	color:#858585;
+}
+
+.prev {
+	float:left;
+}
+
+.next, .close {
+	float:right;
+}
+	
+.clear {
+	display:block;
+	clear:both;
+}
