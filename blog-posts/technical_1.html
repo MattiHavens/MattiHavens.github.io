@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<meta charset=”utf-8”>
+<html>
+<head>
+ <title>Margin Border Padding Blog</title>
+ <link rel="stylesheet" href="tech.css" type="blog_text/css" />
+</head>
+
+<body>
+  <div id="page">
+    <div id="logo">
+      <h1><a href="http://mattihavens.github.io/blog-posts/blog_homepage.html"id="logoLink">Technical Blogs</a></h1>
+    </div>
+    <div id="content">
+      <h2>Comparing padding, border and margin in CSS</h2>
+      <p>
+        From inside out you have the content element, the padding, the border and then the margin.
+      </p>
+      <p> 
+        The differences between padding, border and margin can be best described by the below illustration. This box model is extremely useful and can be applied to every element on a page. 
+      </p>
+      <div class="figure">
+      <p>
+       <p><img src="http://tekeye.biz/wp-content/uploads/2013/01/HTML_padding_border_margin.png"
+       width="500" height="330"
+       alt="Margin Border Padding">
+     </div>
+       <p>
+        I will explain the functions of each from the inside out;
+        The padding can have the same color as the element or content. <br>The table below shows how the padding can be labeled with one to four values (from <a href="http://www.w3schools.com/css/css_padding.asp" target="_blank">from http://www.w3schools.com/css/css_padding.asp</a>);
+      <h3>
+       The padding property can have from one to four values.
+       </h3>
+      <ul>
+        <h4> padding: 25px 50px 75px 100px; </h4>
+        <li>top padding is 25px</li>
+       <li>right padding is 50px</li>
+       <li>bottom padding is 75px</li>
+       <li>left padding is 100px</li>
+       </ul>
+       <ul>
+        <h4> padding: 25px 50px 75px; </h4>
+        <li>top padding is 25px</li>
+       <li>right and left paddings are 50px</li>
+       <li>bottom padding is 75px</li>
+       </ul>
+       <ul>
+        <h4> padding: 25px 50px; </h4>
+        <li>top and bottom paddings are 25px</li>
+       <li>right and left paddings are 50px</li>
+       </ul>
+       <ul>
+        <h4> padding: 25px: </h4>
+        <li>all four paddings are 25px</li>
+       </ul>
+      <p>
+      <p><h3>The border of an element frequently has a border style.</h3></p>
+       Borders can be solid, dotted, dashed, double, groove, ridge, inset and outset. You can set the following self explanatory elements to a border, usually using pixels as a value; border-top-width, border-right-width, border-bottom-width, border-left-width
+       and, border-color. 
+      </p>
+      <p>
+      HTML dog has some wonderful examples. Click below to see examples illustrating the various kinds of borders.
+      <p><a href="http://www.htmldog.com/examples/borders.html" target="_blank">http://www.htmldog.com/examples/borders.html</a>
+       </p>
+     </p>
+     <p><h3>The last element, the margin is completely transparent.</h3></p>
+     <p>
+     The margin does not have a background color, it is completely transparent and gives space between the various elements. The margin is the distance from each element to the next. Or if you imagine it is like a piece of paper and it is the space from the edge of the paper to the next element. It can be labeled as such:</p>
+     <p>
+     body {<br>
+         &nbsp;&nbsp;&nbsp;margin-top: 100px;<br>
+         &nbsp;&nbsp;&nbsp;margin-right: 40px;<br>
+         &nbsp;&nbsp;&nbsp;margin-bottom: 10px; <br>
+         &nbsp;&nbsp;&nbsp;margin-left: 70px;<br>
+     }<br>
+     </p>
+     <p>
+     or in the equivalent on one line</p>
+     <p>
+     body { <br>
+         &nbsp;&nbsp;&nbsp;margin: 100px  40px  10px 70px:<br>
+     }<br>
+     </p>
+     </p>
+     <p>
+       Check out the total measurements of a complete element with calculations below (from <a href="http://www.w3schools.com/css/css_boxmodel.asp" target="_blank">http://www.w3schools.com/css/css_boxmodel.asp</a>); 
+     </p>
+     <p>
+       The total width of the element in the example below is 300px:<br>
+       &nbsp;&nbsp;&nbsp;width: 250px;<br>
+       &nbsp;&nbsp;&nbsp;padding: 10px;<br>
+       &nbsp;&nbsp;&nbsp;border: 5px solid gray;<br>
+       &nbsp;&nbsp;&nbsp;margin: 10px;<br>
+       </p>
+      <p>so if we do the math<br>
+       &nbsp;&nbsp;&nbsp;250px (width)<br>
+       &nbsp;&nbsp;&nbsp;+ 20px (left + right padding)<br>
+       &nbsp;&nbsp;&nbsp;+ 10px (left + right border)<br>
+       &nbsp;&nbsp;&nbsp;+ 20px (left + right margin)<br>
+       &nbsp;&nbsp;&nbsp;= 300px<br>
+       
+    <p><h3>There is a lot of good information out there and below are some links;</h3></p>
+    <p><a href="http://www.impressivewebs.com/difference-between-margins-padding-css/" target="_blank">http://www.impressivewebs.com/difference-between-margins-padding-css/</a>
+       </p>
+       <p><a href="http://www.htmldog.com/guides/css/beginner/borders/" target="_blank">http://www.htmldog.com/guides/css/beginner/borders/</a>
+       </p>
+       <p><a href="http://adamschwartz.co/magic-of-css/" target="_blank">http://adamschwartz.co/magic-of-css/</a>
+       </p>
+       <p><a href="http://www.w3schools.com/css/css_boxmodel.asp" target="_blank">http://www.w3schools.com/css/css_boxmodel.asp</a>
+       </p>
+    </div>
+    <div id="footer">
+      <p>
+        Webpage made by <a href="http://mattihavens.github.io/blog-posts/blog_homepage.html" target="_blank">Matti Havens - mattihav@hotmail.com</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>

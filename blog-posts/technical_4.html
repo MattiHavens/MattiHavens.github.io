@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<meta charset=”utf-8”>
+<html>
+<head>
+    <title>Blocks, Procs and Lambdas</title>
+    <link rel="stylesheet" href="procs.css" type="blog_text/css" />
+</head>
+<body>
+  <div id="page">
+    <div id="logo">
+      <h2><a href="http://mattihavens.github.io/blog-posts/blog_homepage.html"id="logoLink">Technical Blogs</a></h2>
+    </div>
+    <div id="content">
+      <h1><strong><h1a>Blocks, Procs and Lambdas</h1a></strong></h1>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>
+      Below are some simple examples which will help highlight the differences between Blocks, Procs amd Lambdas.
+      </p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>
+      Blocks are very common Ruby elements. For example;
+      <br>
+      <br>
+      </p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://mattihavens.github.io/blog-posts/block.jpg"
+    width="450" height="185"
+    alt="Block">
+    <p>
+    <br>
+    <br>
+    <br>
+    <br>
+      Procedures or Procs for short are blocks that we can call again. If we call class on proc we will see that it is a proc object.<br> Notice if we call proc.call(2) we get 2, while proc.call is nil and proc.call(1,2,3) is 1 (the first number called, the other numbers get ignored).
+      <br>
+      <br>
+      Calling proc_check prints nothing.
+      </p>
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://mattihavens.github.io/blog-posts/proc.jpg"
+    width="450" height="350"
+    alt="Proc">
+    <br>
+    <br>
+    <br>
+    <br>
+      <p>
+      Lambdas are variations on Procs. If we call class on lambda we will see that it is also a proc object. <br>One key difference is that if we call lambda.call(2) we get 2, while lambda.call and lambda.call(1,2,3) both raise ArgumentErrors.
+      <br>
+      <br>
+      Calling lambda_check prints 'I am a Lambda!!' because return triggers the puts right after the lam.call.
+      <br>
+      <br>
+      </p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://mattihavens.github.io/blog-posts/lambda.jpg"
+    width="450" height="350"
+    alt="Proc">
+     <br>
+     <br>
+     <br>  
+     <br>
+     <br>           
+      <h3>
+       Resources
+       </h3>
+      <p>
+    <a href="http://www.reactive.io/tips/2008/12/21/understanding-ruby-blocks-procs-and-lambdas/" target="_blank">http://www.reactive.io/tips/2008/12/21/understanding-ruby-blocks-procs-and-lambdas/</a> 
+    </p>
+     <p>
+     <br>
+     </p>
+     <p>
+     <a href="http://rubylearning.com/satishtalim/ruby_blocks.html" target="_blank">http://rubylearning.com/satishtalim/ruby_blocks.html</a>
+     </p>
+     <br>
+     <p>
+    <a href="http://rubymonk.com/learning/books/4-ruby-primer-ascent/chapters/18-blocks/lessons/64-blocks-procs-lambdas" target="_blank">http://rubymonk.com/learning/books/4-ruby-primer-ascent/chapters/18-blocks/lessons/64-blocks-procs-lambdas</a> 
+    </p>
+    <br>
+    <p>
+    <a href="http://awaxman11.github.io/blog/2013/08/05/what-is-the-difference-between-a-block/" target="_blank">http://awaxman11.github.io/blog/2013/08/05/what-is-the-difference-between-a-block/</a> 
+    </p>
+    <br>
+    <br>
+    <br>
+    </div>
+    <div id="footer">
+      <p>
+        Webpage made by <a href="http://mattihavens.github.io/blog-posts/blog_homepage.html" target="_blank">Matti Havens - mattihav@hotmail.com</a>
+      </p>
+    </div>
+</body>
+</html>
+

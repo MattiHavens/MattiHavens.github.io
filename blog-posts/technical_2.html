@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<meta charset=”utf-8”>
+<html>
+<head>
+  <title>Enumerable#cycle</title>
+  <link rel="stylesheet" href="cycle.css" type="blog_text/css" />
+</head>
+
+<body>
+  <div id="page">
+    <div id="logo">
+      <h2><a href="http://mattihavens.github.io/blog-posts/blog_homepage.html"id="logoLink">Technical Blogs</a></h2>
+    </div>
+    <div id="content">
+      <h1><strong>Enumerable#cycle</strong></h1>
+      <br>
+      <br>
+      <br>
+    &nbsp;&nbsp;&nbsp;<img src="http://originalbigwheel.us/images/MarxBigWheel400.jpg"
+    width="820" height="660"
+    alt="Big Wheel">
+      <br>
+      <br>
+      <br>
+      <br>
+    <h3>
+       .cycle
+    </h3>
+      <p>
+      I researched enumerable#cycle primarily because I like bicycles. 
+      </p>
+      <p>
+     Seriously though, it is a very useful method that lets you cycle through all the elements of an array forever <br> unless you give a condition to stop it or put a number in parentheses following .cycle. <br>
+     Or until you stop it with control-c. In this example we will use break to end it.
+      </p>
+      <p>
+      Check it out;
+      </p>
+      <p>
+      months_of_year = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"]<br>
+          &nbsp;&nbsp;&nbsp;months_of_year.cycle do |month|<br>
+          &nbsp;&nbsp;&nbsp;puts month<br>
+          &nbsp;&nbsp;&nbsp;break if month == "Dec"<br>
+      end<br>
+      <br>
+      <i>(output)</i><br>
+      Jan <br>
+      Feb <br>
+      Mar <br>
+      Apr <br>
+      May <br>
+      June <br>
+      July <br>
+      Aug <br>
+      Sep <br>
+      Oct <br>
+      Nov <br>
+      Dec<br>
+      <p>
+      Also, you could put a number in parentheses following .cycle to iterate through it that number of times.<br>
+      For example;
+      </p>
+      rainbow = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"]<br>
+          &nbsp;&nbsp;&nbsp;rainbow.cycle(2) do |colors|<br>
+          &nbsp;&nbsp;&nbsp;puts colors<br>
+      end<br>
+      <br>
+      <i>(output)</i><br>
+      Red<br>
+      Orange<br>
+      Yellow<br>
+      Green<br>
+      Blue<br>
+      Indigo<br>
+      Violet<br>
+      Red<br>
+      Orange<br>
+      Yellow<br>
+      Green<br>
+      Blue<br>
+      Indigo<br>
+      Violet<br>
+      <p>
+      You can also chain it together with other methods for example, you could reverse it.<br>
+      </p>
+      rainbow = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"]<br>
+          &nbsp;&nbsp;&nbsp;rainbow.reverse_each.cycle(1) do |colors|<br>
+          &nbsp;&nbsp;&nbsp;puts colors<br>
+      end<br>
+      <br>
+      <i>(output)</i><br>
+      Violet<br>
+      Indigo<br>
+      Blue<br>
+      Green<br>
+      Yellow<br>
+      Orange<br>
+      Red<br>
+      </p>
+     <h3>
+       .cycle with hashes
+       </h3>
+      <p>
+      It can also be used with hashes. <br>
+      <br>
+      zodiac = {<br>
+       &nbsp;&nbsp;&nbsp;:76 => "Dragon", :77 => "Snake", :78 => "Horse", :79 => "Goat",<br>
+       &nbsp;&nbsp;&nbsp;:80 => "Monkey", :81 => "Rooster", :82 => "Dog", :83 => "Pig",<br>
+       &nbsp;&nbsp;&nbsp;:84 => "Rat", :85 => "Ox", :86 => "Tiger", :87 => "Rabbit"<br>
+       }<br>
+      </p>
+      zodiac.cycle do |year, animal|<br>
+         &nbsp;&nbsp;&nbsp;puts "Year: #{year} - Animal: #{animal}"<br>
+         &nbsp;&nbsp;&nbsp;break if year == :87<br>
+      end<br>
+      <br>
+      <i>(output)</i><br>
+      "Year: 76 - Animal: Dragon"<br>
+"Year: 77 - Animal: Snake"<br>
+"Year: 78 - Animal: Horse"<br>
+"Year: 79 - Animal: Goat"<br>
+"Year: 80 - Animal: Monkey"<br>
+"Year: 81 - Animal: Rooster"<br>
+"Year: 82 - Animal: Dog"<br>
+"Year: 83 - Animal: Pig"<br>
+"Year: 84 - Animal: Rat"<br>
+"Year: 85 - Animal: Ox"<br>
+"Year: 86 - Animal: Tiger"<br>
+"Year: 87 - Animal: Rabbit"<br>
+      <br>
+      <br>
+      <h3>
+       Resources
+       </h3>
+      <p>
+      </p>
+      <p>
+    <a href="http://ruby-doc.org/core-2.1.2/Enumerable.html" target="_blank">ruby-doc.org</a> 
+    </p>
+     <p>
+     </p>
+     <p>
+     <a href="http://apidock.com/ruby/Enumerable/cycle" target="_blank">API Dock</a>
+     </p>
+     <p>
+     <a href="http://www.globalnerdy.com/2008/07/06/enumerating-enumerable-enumerablecycle/" target="_blank">Global Nerdy</a>
+     </p>
+     <p>
+     <a href="http://www.sitepoint.com/guide-ruby-collections-iii-enumerable-enumerator/" target="_blank">sitepoint</a>
+     </p>
+     </div>
+    <div id="footer">
+      <p>
+        Webpage made by <a href="http://mattihavens.github.io/blog-posts/blog_homepage.html" target="_blank">Matti Havens - mattihav@hotmail.com</a>
+      </p>
+    </div>
+</body>
+</html>
+
