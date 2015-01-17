@@ -1,0 +1,117 @@
+
+body, html, main {
+    height: 100%;
+}
+
+body {
+  background-color:#000;
+}
+
+.col-xs-6 {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.caption {
+    position:absolute;
+    top:0;
+    right:0;
+    font-family: Futura, sans-serif; font-size: 0.7em; color:#858585;    
+    vertical-align: middle;
+    background-color: black;
+    /*Opacity start*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=85);
+    -moz-opacity: 0.85;
+    -khtml-opacity: 0.85;
+    opacity: 0.85;
+    /*Opacity end*/
+    color: white; 
+    width:100%;
+    height:100%;
+    /*padding:2%;*/
+    display: none;
+    text-align:center;
+    color:white !important;
+    z-index:2;
+    /*new things below*/
+    background-image: url(dollar_flag.jpg)
+}
+
+.container {
+  padding-right: 0.938em;
+  padding-left: 0.938em;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Futura, sans-serif; font-size: 1.200em; color: gray;
+  margin-right: auto;
+  min-width: 100%;
+  background-size: cover;
+  height: auto;
+  height: 100%;
+}
+    
+.navbar {
+    background-color: transparent;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    border: 0px;
+}
+
+.navbar li a {
+    color: gray !important;
+    margin-bottom: 0px;
+}
+
+.navbar li a:hover {
+    color: red !important;
+    margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    background-color: #282828  !important;
+    margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav>.dropdown>.dropdown-menu>.active>a {
+    background-color: #282828  !important;
+    margin-bottom: 0px;
+}
+
+p {
+    width: 95%;
+    margin-left: 1%;
+}
+
+.descrip {
+	position: relative;
+	float: left;
+	top: 13%;
+	left: 5%;
+  width:95%;   
+	text-decoration:none;
+	font-size:1.10em;
+	color:gray;
+  opacity: 1;
+}	
+
+a, span.link {
+  color: gray;
+  text-decoration: none !important;
+}
+
+a:visited, span.visited {
+   color: gray;
+   text-decoration: none !important;
+}
+
+a:active, span.active {
+   color: gray;
+   text-decoration: none !important;
+}
+
+.descrip a:hover {
+    color: red !important;
+    margin-bottom: 0px;
+}
+

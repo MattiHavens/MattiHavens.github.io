@@ -1,0 +1,123 @@
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap.css" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="videos.css"/>
+   <title>Video Installations</title>
+</head>
+
+<body>
+
+<div class="container">
+
+      <div class="navbar navbar-default row">
+          <ul class="nav navbar-nav">
+               <li><a href="http://mattihavens.com">Home</a></li>
+
+            <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Two-dimensional work <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="photos.html">Photographs</a></li>
+                    <li><a href="paintings.html">Paintings</a></li>
+                    <li><a href="prints.html">Screen prints</a></li>
+                    <li><a href="misc.html">Miscellaneous</a></li>
+                  </ul>
+            </li>
+
+            <li class="dropdown active">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Video and performance <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="active"><a href="video_installs.html">Video installations</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="perfs.html">Performance documentations</a></li>
+                  </ul>
+            </li>
+
+            <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Sculpture and installation <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="installs.html">Sculptures and installations</a></li>
+                    <li><a href="video_installs.html">Video installations</a></li>
+                  </ul>
+            </li>
+
+            <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Collaborations <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="with_marianne.html">with Marianne Engel</a></li>
+                    <li><a href="collaborations.html"><i>National Anthem Translations</i></a></li>
+                  </ul>
+            </li>
+
+          </ul>
+      </div>
+  
+    <div class="row">
+        <div class="col-md-6">   
+        <a href="RGB.html">         
+            <div class="thumbnail">
+                <div class="caption">
+                    <h4>Click for video documentation of </h4><h4> <i>RGB</i></h4>
+                </div>
+                <img src="RGB_3.jpg">
+            </div></a>
+      </div>
+      
+      <div class="col-md-6">  
+        <a href="FRC.html">          
+            <div class="thumbnail">
+                <div class="caption">
+                    <h4>Click for video documentation of </h4><h4><i>The Forest, the River and the City</i></h4>
+                </div>
+                <img src="FRC_3.jpg">
+            </div></a>
+      </div>
+
+      <div class="col-md-6">   
+        <a href="the_rooster.html">         
+            <div class="thumbnail">
+                <div class="caption">
+                    <h4>Click for video documentation of </h4><h4> <i>The Rooster</i></h4>
+                </div>
+                <img src="the_rooster_3.jpg">
+            </div></a>
+      </div>
+      
+      <div class="col-md-6">  
+        <a href="stratus.html">          
+            <div class="thumbnail">
+                <div class="caption">
+                    <h4>Click for video documentation of </h4><h4> <i>Stratus</i></h4>
+                </div>
+                <img src="stratus_4.jpg">
+            </div></a>
+      </div>       
+        
+  </div>
+  
+</div><!-- /.container -->
+
+</body>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script>
+    $( document ).ready(function() {
+        $("[rel='tooltip']").tooltip();    
+     
+        $('.thumbnail').hover(
+            function(){
+                $(this).find('.caption').slideDown(250); //.fadeIn(250)
+            },
+            function(){
+                $(this).find('.caption').slideUp(250); //.fadeOut(205)
+            }
+        ); 
+    });
+
+    </script>
+</html>
+

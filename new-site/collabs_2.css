@@ -1,0 +1,130 @@
+
+body, html, main {
+    height: 100%;
+}
+
+.navbar {
+    background-color: transparent;
+    font-family: Futura, sans-serif; font-size: 1.30em; color: black;
+    margin-bottom: 0px;
+    margin-left: 8px;
+    border: 0px;
+}
+
+h1 {
+    font-family: Futura, sans-serif; font-size: 1.30em; color: black
+}
+
+.navbar li a:hover {
+    color: red !important;
+    margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav>.dropdown>.dropdown-menu>.active>a {
+    background-color: gray  !important;
+    margin-bottom: 0px;
+}
+
+#content {
+    background-color: transparent;
+    /*Opacity start*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 10;
+    -khtml-opacity: 1;
+    opacity: 1;
+    /*Opacity end*/
+    color: white;
+    position: absolute;
+    width: 99%;
+    z-index: 99;
+}
+
+.descrip {
+	position: relative;
+    font-family: Futura, sans-serif; font-size: 1.30em; color: black;
+	float: left;
+	top: 13%;
+	left: 7%;
+    width:85%;   
+	text-decoration:none;
+	font-size:1.188em;
+    z-index: 99;
+}	
+
+.col-sm-12 {
+    font-family: Futura, sans-serif; 
+    font-size: 1.10em; 
+    color: black;
+    margin-left: 10px;
+    margin-right: 5px;
+	margin-bottom: 0px;
+    border-bottom: 0px;
+    padding-bottom: 0px; 
+    background-size: cover;
+	background-attachment: fixed;
+}
+
+.col-xs-6 {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+a:hover {
+    color: red !important;
+    margin-bottom: 0px;
+}
+
+.container {
+	min-width: 100%;
+	min-height: 100%;
+	background-size: cover;
+	height: 100%;
+
+	background-attachment: fixed;
+  background-image: url("dollar_flag_2.jpg");
+  background-color: black;
+  color: transparent;
+  /*Opacity start*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
+  -moz-opacity: 0.20;
+  -khtml-opacity: 0.2;
+  opacity: 0.2;
+  /*Opacity end*/
+}
+
+a, span.link {
+  color: gray;
+  text-decoration: none !important;
+}
+
+a:visited, span.visited {
+   color: gray;
+   text-decoration: none !important;
+}
+
+a:active, span.active {
+   color: gray;
+   text-decoration: none !important;
+}
+
+.descrip a:hover {
+    color: red !important;
+    margin-bottom: 0px;
+}
+
+a, span.link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited, span.visited {
+   color: black;
+   text-decoration: none;
+}
+
+a:active, span.active {
+   color: black;
+   text-decoration: none;
+}

@@ -1,0 +1,138 @@
+
+body {
+	background-color:#000;
+}
+
+a, span.link {
+  color: #858585;
+  text-decoration: none;
+}
+
+a:visited, span.visited {
+   color: #858585;
+   text-decoration: none;
+}
+
+a:active, span.active {
+   color: #858585;
+   text-decoration: none;
+}
+
+.container {
+  padding-right: 0.938em;
+  padding-left: 0.938em;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Futura, sans-serif; font-size: 1.200em;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 100%;
+  background-size: cover;
+  height: auto;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.navbar {
+    background-color: transparent;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    border: 0px;
+}
+
+.navbar li a {
+    color: gray !important;
+    margin-bottom: 0px;
+}
+
+.navbar li a:hover {
+    color: red !important;
+    margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    background-color: #282828  !important;
+    margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav>.dropdown>.dropdown-menu>.active>a {
+    background-color: #282828  !important;
+    margin-bottom: 0px;
+}
+
+.thumbnail {
+	margin-bottom: 30px;
+  margin-top: 40px;
+	padding: 0px;
+	border: 0px;
+  top: 40px;
+	background-color: transparent;
+	padding:0 0 0 0;
+  margin:0 0 0 0;
+  list-style:none;
+  margin-bottom:25px; 
+}
+
+.thumbnail img {
+    cursor: pointer;
+    margin-top: 100px;
+}
+
+.modal-body {
+    padding:5px !important;
+}
+
+.modal-content {
+    border-radius:0;
+}
+
+.modal-dialog img {
+    text-align:center;
+    margin:0 auto;
+}
+
+.controls{          
+  width:50px;
+  display:block;
+  font-size:11px;
+  padding-top:8px;
+  font-weight:bold;          
+}
+
+.next {
+  float:right;
+  text-align:right;
+}
+
+.modal-dialog {
+    max-width:800px;
+    padding-top: 30px;
+}
+
+@media screen and (min-width: 768px){
+    .modal-dialog {
+        width:800px;
+        padding-top: 30px;
+    }          
+}
+
+@media screen and (max-width:1500px){
+    #ads {
+        display:none;
+    }
+}
+
+#descrip {
+	position: relative;
+	float: left;
+	top: 20%;
+	left: 5%;
+  width:90%;
+	margin:4.500em auto;
+	text-decoration:none;
+	font-family: Futura, sans-serif; 
+	font-size:1.375em;
+	color:#858585;
+}	
+

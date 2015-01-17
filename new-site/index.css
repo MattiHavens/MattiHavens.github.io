@@ -1,0 +1,42 @@
+
+body, html, main {
+    height: 100%;
+}
+
+h1 {
+  font-family: Futura, sans-serif; font-size: 2.40em; color: white;
+}
+
+h3 {
+  font-family: Futura, sans-serif; font-size: 1.300em; color: white;
+
+}
+
+.container {
+  padding-right: 0.938em;
+  padding-left: 0.938em;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Futura, sans-serif; font-size: 1.200em;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 100%;
+  background-size: cover;
+  height: auto;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url(RGB_6.gif);
+}
+
+.navbar {
+    font-family: Futura, sans-serif; font-size: 1.10em; color: black;
+    background-color: white;
+    padding-left: 10px;
+}
+
+.navbar li a:hover {
+    color: red !important;
+    margin-bottom: 0px;
+}
+

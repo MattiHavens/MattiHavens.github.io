@@ -1,0 +1,126 @@
+
+body, html, main {
+    height: 100%;
+}
+
+body {
+  background-color:#000;
+}
+
+.container {
+  padding-right: 0.938em;
+  padding-left: 0.938em;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Futura, sans-serif; font-size: 1.200em;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 100%;
+  background-size: cover;
+  height: auto;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+ul {         
+    padding:0 0 0 0;
+    margin:0 0 0 0;
+}
+
+ul li {     
+    list-style:none;
+}
+
+ul li img {
+    cursor: pointer;
+    margin-bottom:25px;
+}
+
+.modal-body {
+    padding:5px !important;
+}
+
+.modal-content {
+    border-radius:0;
+}
+
+.modal-dialog img {
+    text-align:center;
+    margin:0 auto;
+}
+
+.controls{          
+  width:50px;
+  display:block;
+  font-size:11px;
+  padding-top:8px;
+  font-weight:bold;          
+}
+
+.next {
+  float:right;
+  text-align:right;
+}
+
+.modal-dialog {
+    max-width:500px;
+    padding-top: 40px;
+}
+
+@media screen and (min-width: 768px){
+    .modal-dialog {
+        width:500px;
+        padding-top: 40px;
+    }          
+}
+
+@media screen and (max-width:1500px){
+    #ads {
+        display:none;
+    }
+}
+
+.navbar {
+	background-color: transparent;
+	margin-bottom: 0px;
+	border: 0px;
+	margin-left: 10px;
+}
+
+.navbar li a {
+	color: gray !important;
+	margin-bottom: 0px;
+}
+
+.navbar li a:hover {
+	color: red !important;
+	margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav>.active>a {
+	background-color: #282828  !important;
+	margin-bottom: 0px !important;
+}
+
+.navbar-default .navbar-nav>.dropdown>.dropdown-menu>.active>a {
+    background-color: #282828  !important;
+    margin-bottom: 0px !important;
+}
+
+a, span.link {
+  color: #858585;
+  text-decoration: none;
+}
+
+a:visited, span.visited {
+   color: #858585 !important;
+   text-decoration: none !important;
+}
+
+a:active, span.active {
+   color: #858585 !important;
+   text-decoration: none !important;
+}
+	
+

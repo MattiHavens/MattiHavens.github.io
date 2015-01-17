@@ -1,0 +1,171 @@
+
+<!-- for lightbox
+ view-source:http://demo.fearlessflyer.com/html/demo/bootstrap-photo-gallery/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paintings</title>
+    <link href="bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="paintings.css"/>
+    
+  </head>
+ 
+  <body>
+
+    <div class="container">   
+
+      <div class="navbar navbar-default row">
+          <ul class="nav navbar-nav">
+              <li><a href="http://mattihavens.com">Home</a></li>
+
+        <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Two-dimensional work <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="photos.html">Photographs</a></li>
+                <li class="active"><a href="paintings.html">Paintings</a></li>
+                <li><a href="prints.html">Screen prints</a></li>
+                <li><a href="misc.html">Miscellaneous</a></li>
+              </ul>
+        </li>
+
+        <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Video and performance <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="video_installs.html">Video installations</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="perfs.html">Performance documentations</a></li>
+              </ul>
+        </li>
+
+        <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Sculpture and installation <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="installs.html">Sculptures and installations</a></li>
+                <li><a href="video_installs.html">Video installations</a></li>
+              </ul>
+        </li>
+
+        <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Collaborations <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="with_marianne.html">with Marianne Engel</a></li>
+                <li><a href="collaborations.html"><i>National Anthem Translations</i></a></li>
+              </ul>
+        </li>
+
+      </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-lg-4">   
+            <div class="thumbnail">
+                <img class="img-responsive" src="red_3.jpg">
+            </div>
+      </div>
+
+       <div class="col-xs-12 col-sm-4 col-lg-2">   
+            <div class="thumbnail">
+                <img class="img-responsive" src="green_3.jpg">
+            </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-8 col-lg-4">   
+            <div class="thumbnail">
+                <img class="img-responsive" src="blue_2.jpg">
+            </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-4 col-lg-2">   
+            <div class="thumbnail">
+                <img class="img-responsive" src="yellow_2.jpg">
+            </div>
+      </div>
+    </div><!-- row -->
+
+  </div><!-- container -->
+
+<section id="descrip">
+   <p>The paintings above were shown together for a solo show at Entropia Gallery in Wroclaw, Poland.</p>
+   <p>Patterns, geometry and equations are the basis of Series. In <i>Series (Red)</i> it is the Fibonacci series that expands to the edge of the frame. In <i>Series (Yellow)</i> the square pattern is continually halved.
+   </p>
+</section>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">         
+          <div class="modal-body">   
+
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+</body>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){        
+            $('.thumbnail img').on('click',function(){
+                var src = $(this).attr('src');
+                var img = '<img src="' + src + '" class="img-responsive"/>';
+                //start of new code new code
+                var index = $(this).parent('.thumbnail').index();   
+                var html = '';
+                html += img;                
+                html += '<div style="height:25px;clear:both;display:block;">';
+                html += '<a class="controls next" href="'+ (index+2) + '">next &raquo;</a>';
+                html += '<a class="controls previous" href="' + (index) + '">&laquo; prev</a>';
+                html += '</div>';
+                
+                $('#myModal').modal();
+                $('#myModal').on('shown.bs.modal', function(){
+                    $('#myModal .modal-body').html(html);
+                    //new code
+                    $('a.controls').trigger('click');
+                })
+                $('#myModal').on('hidden.bs.modal', function(){
+                    $('#myModal .modal-body').html('');
+                });
+           });
+        })
+        //new code
+        $(document).on('click', 'a.controls', function(){
+            var index = $(this).attr('href');
+            var src = $('div.row .col-xs-12:nth-child('+ index +') img').attr('src');             
+            $('.modal-body img').attr('src', src);
+            
+            var newPrevIndex = parseInt(index) - 1; 
+            var newNextIndex = parseInt(newPrevIndex) + 2; 
+            
+            if($(this).hasClass('previous')){               
+                $(this).attr('href', newPrevIndex); 
+                $('a.next').attr('href', newNextIndex);
+            }else{
+                $(this).attr('href', newNextIndex); 
+                $('a.previous').attr('href', newPrevIndex);
+            }
+            
+            var total = $('div.row .thumbnail').length + 1; 
+            //hide next button
+            if(total === newNextIndex){
+                $('a.next').hide();
+            }else{
+                $('a.next').show()
+            }            
+            //hide previous button
+            if(newPrevIndex === 0){
+                $('a.previous').hide();
+            }else{
+                $('a.previous').show()
+            }
+            
+            return false;
+        });
+        
+    </script>
+
+</html>
+
